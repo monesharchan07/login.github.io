@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> login</title>
+        <style>
+            body {
+                background-color: rgb(181,91, 7);
+                font-family:'Pacifico', cursive;
+                display:flex;
+                justify-content:center;
+                align-items: center;
+                height:100vh;
+                margin:0;
+            }
+            .login-container {
+                display:flex;
+                flex-direction:column;
+                align-items: center;
+                gap:50px;
+            }
+            .login-box {
+                background: rgb(249, 192, 5);
+                padding:32px;
+                justify-content: center;
+                border: 1px solid dimgray;
+                border-radius: 10px;
+                color: whitesmoke;
+                box-shadow: 0 0 25px rgb(245, 247, 247);
+                width: 350px;
+                max-width: 90%;
+                /*TOGGLE EFFECT*/
+                transition: all 0.3s ease;
+                transform:scale(1);
+            }
+            .login-box:hover {
+                transform:scale(1.15);
+                box-shadow: 0 0 35px rgb(238, 240, 240);
+            }
+h2 {
+    text-align: center;
+}
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid black;
+    border-radius: 5px;
+    font: inherit;
+    box-sizing: border-box;
+    background: white;
+    color: black;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background-color:rgb(255, 213, 0);
+    color:black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font: inherit;
+    margin-top: 16px;
+}
+.name {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    line-height: 1.4;
+}
+.info {
+    margin: 0;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 40px; 
+    font-weight: bold;
+    color: whitesmoke;
+    letter-spacing: 3px; 
+    text-transform: uppercase;
+        </style>
+    </head>
+    <body>
+        <div class="login-container">
+            <form class="login-box" method="POST" action="/login">
+                <h2>LOGIN</h2>
+                <input type="text" name="Username"
+                placeholder="Username" required>
+                <input type="password" name="password"
+                placeholder="Password" required>
+                <button type="submit">sign In</button>
+            </form>
+        <div class="name">
+            <h2 class="info"><strong>HANDS ON ROBOTICS</strong></h2>
+            <P>By <b>Robovitics Club</b></P>
+        </div>
+        </div>
+    </body>
+</html>
